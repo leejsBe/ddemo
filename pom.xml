@@ -86,6 +86,13 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+		        <groupId>org.apache.tomcat.maven</groupId>
+		        <artifactId>tomcat8-maven-plugin</artifactId>
+		        <version>2.2</version>
+		    </plugin>
+		      
 		</plugins>
 	</build>
 	
@@ -131,5 +138,7 @@
 			</dependencies>
 		</profile>
 	</profiles>
+	
+	
 
 </project>
