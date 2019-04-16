@@ -8,7 +8,7 @@ public class HelloRestController {
 
 		@RequestMapping("/")
 		public String index() {
-			return "hello world!@@";
+			return "hello world!@@%%s";
 		}
 		
 		@RequestMapping("/test")
