@@ -13,7 +13,7 @@ public class WorldController {
 	
 	@RequestMapping(value = {"/main/main", "/mobile/main/main"}, method = RequestMethod.GET)
 	public String mainPage(Model model,HttpServletRequest request) {
-		System.out.println("efefef");
+		
 		return "main/mainPage";
 	}
 	
