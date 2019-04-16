@@ -105,10 +105,9 @@
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-war-plugin</artifactId>
-						<version>3.2.2</version>
+						<artifactId>maven-resources-plugin</artifactId>
 						<configuration>
-							<webappDirectory>/var/lib/jenkins/workspace/test/target</webappDirectory>
+							<encoding>UTF-8</encoding>
 						</configuration>
 					</plugin>
 				</plugins>
