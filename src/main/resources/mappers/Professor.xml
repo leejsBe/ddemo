@@ -8,4 +8,9 @@
         select * from professor;
     </select>
     
+    <insert id="insertProfessor" parameterType="com.example.demo.domain.Professor" useGeneratedKeys="true" keyProperty="_id">
+    	insert into professor(name,belog,phone)
+    	values(#{name},#{belog},#{phone})
+    </insert>
+    
 </mapper>

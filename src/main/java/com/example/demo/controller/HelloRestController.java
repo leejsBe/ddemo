@@ -86,7 +86,22 @@ public class HelloRestController {
 		}
 		
 		
-		
+		@RequestMapping(value="/professor/{name}/{belog}/{phone}",method=RequestMethod.GET)
+		public ResponseEntity<String> insertProfessor(@PathVariable("name") String name, @PathVariable("belog") String belog, @PathVariable("phone") String phone) throws Exception{
+			ResponseEntity<String> entity = null;
+			
+			Professor professor = new Professor();
+			professor.setName(name);
+			professor.setBelog(belog);
+			professor.setPhone(phone);
+			
+			int resultid = professorMapper.insertProfessor(professor);
+			
+			String result = "success! "+resultid;
+			
+			entity = new ResponseEntity<String>(result,HttpStatus.OK);
+			return entity;
+		}
 		
 		
 		
