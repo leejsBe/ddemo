@@ -17,7 +17,6 @@ import com.example.demo.domain.SampleVO;
 import com.example.demo.domain.mapper.ProfessorMapper;
 
 @RestController
-@EnableAutoConfiguration
 public class HelloRestController {
 
 		@Autowired
